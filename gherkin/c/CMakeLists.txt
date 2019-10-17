@@ -88,7 +88,7 @@ FOREACH(ENTITY ${GOOD_FEATURE_FILES})
     add_custom_command(
             TARGET gherkinexe
             POST_BUILD
-            COMMAND gherkinexe  ${ENTITY}
+            COMMAND gherkinexe ${ENTITY} > /dev/null
             DEPENDS invo
     )
 ENDFOREACH()
